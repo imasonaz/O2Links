@@ -7,6 +7,12 @@
       <jdbc-url>jdbc:sqlite:C:\rails_projects\O2Links\db\development.sqlite3</jdbc-url>
       <libraries />
     </data-source>
+    <data-source source="LOCAL" name="Rails O2Links: test" uuid="f76de24f-620a-476e-9416-f485b3c4da89">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\rails_projects\O2Links\db\test.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
   </component>
 </project>
 
