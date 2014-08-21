@@ -1,0 +1,29 @@
+<h1>Listing Items</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Productid</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @charm_items.each do |charm_item| %>
+      <tr>
+        <td><%= charm_item.Name %></td>
+        <td><%= charm_item.ProductID %></td>
+        <td><%= link_to 'Open', charm_item %></td>
+        <td><%= link_to 'Edit', edit_charm_item_path(charm_item) %></td>
+        <td><%= link_to 'Delete', charm_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Charm item', new_charm_item_path %>
